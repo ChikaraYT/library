@@ -1,0 +1,332 @@
+/*@media (max-width: 1279px) {*/
+/*    .favorites-books {*/
+/*        justify-content: center;*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    !*body {*!*/
+/*    !*    display: none;*!*/
+/*    !*}*!*/
+/*}*/
+
+@media screen and (max-width: 1439px) {
+    .main, .welcome, .overlay {
+        width: 100%;
+    }
+
+    .about_carousel {
+        max-width: 925px;
+        margin: 0 auto;
+    }
+
+    .about__paragraph {
+        line-height: 40px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .about_images {
+        display: flex;
+        align-items: center;
+        /*justify-content: center;*/
+    }
+
+    .about_pagination {
+        width: 94px;
+        margin-top: 25px;
+        padding-top: 0;
+    }
+
+    #circle-4 {
+        display: block;
+    }
+
+    #fav {
+        /*padding: 0 20px 0 40px;*/
+        margin-top: 25px;
+    }
+
+    .favorites {
+        margin-bottom: 45px;
+    }
+
+    .favorites-books {
+/*        padding-right: 40px;*/
+        margin: 0 20px;
+    }
+
+    .book {
+        left: -20px;
+        top: 5px;
+    }
+
+    .menu-right {
+        margin-left: auto;
+    }
+
+    .seasons-radios {
+        gap: 0;
+        margin-bottom: 30px;
+        width: 43.8rem;
+        justify-content: space-between;
+    }
+
+    .seasons-radio::before {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .contacts {
+        height: 1055px;
+    }
+
+    .contacts-container {
+        grid-template-columns: auto;
+        grid-template-areas:
+        "a"
+        "c";
+    }
+
+    .contacts-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mail {
+        letter-spacing: 2.22px;
+    }
+
+    .contacts-block:nth-child(2) {
+        margin-bottom: 80px;
+    }
+
+    .map {
+        max-width: 696px;
+        max-height: 414px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .card {
+        height: 857px;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .get {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get__title {
+        margin-bottom: 41px;
+    }
+
+    .get-paragraph {
+        width: 600px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .get-buttons {
+        justify-content: center;
+    }
+
+    .copyright {
+        padding-left: 0;
+        margin-left: -17px;
+    }
+}
+
+@media screen and (max-width: 1282px) {
+    .favorites-books {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-nav {
+        /*display: none;*/
+    }
+
+    .header-nav {
+        width: 332px;
+        height: 570px;
+        top: 0;
+        right: -100%;
+        z-index: 5;
+        position: fixed;
+        background: #0C0C0E;
+        overflow-x: hidden;
+        transition: .5s all ease-in-out;
+    }
+
+    .header-nav_active {
+        right: 0;
+        z-index: 5;
+    }
+
+    .header-nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        gap: 30px;
+        left: 45px;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .burger {
+        display: flex;
+        position: relative;
+        z-index: 6;
+    }
+
+    .header {
+        gap: 40px;
+    }
+
+    .header__icon {
+        margin-left: auto;
+        position: relative;
+        z-index: 6;
+    }
+
+    .about_carousel {
+        max-width: 450px;
+    }
+
+    .about_pagination {
+        width: 120px;
+    }
+
+    #circle-4, #circle-5 {
+        display: block;
+    }
+
+    .burger-line_active:nth-child(1) {
+        top: 50%;
+    }
+
+    .burger-line_active:nth-child(2) {
+        top: 50%;
+    }
+
+    .burger-line_active:nth-child(3) {
+        top: 50%;
+    }
+
+    @keyframes BottomToCenter {
+        0% {top: 100%;}
+        50% {top: 75%;}
+        100% {top: 50%;}
+    }
+
+    @keyframes CenterToNone {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+
+    @keyframes TopToCenter {
+        0% {top: 0}
+        50% {top: 25%;}
+        100% {top: 50%;}
+    }
+
+    @keyframes rotateIn {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(-45deg);}
+    }
+
+    @keyframes rotateOut {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(45deg);}
+    }
+
+    .burger-line_active:nth-child(1) {
+        animation: TopToCenter 0.3s forwards, rotateIn 0.3s forwards 0.3s;
+    }
+
+    .burger-line_active:nth-child(2) {
+        animation: CenterToNone 0.3s forwards;
+    }
+
+    .burger-line_active:nth-child(3) {
+        animation: BottomToCenter 0.3s forwards, rotateOut 0.3s forwards 0.3s;
+    }
+
+    .burger-line:not(.burger-line_active):nth-child(1) {
+        /*animation: rotateIn 0.3s forwards 0.3s reverse, TopToCenter 0.3s forwards reverse;*/
+        /*animation: TopToCenterReverse 0.3s forwards, rotateInReverse 0.3s forwards 0.3s;*/
+    }
+
+    .burger-line:not(.burger-line_active):nth-child(2) {
+        /*animation: CenterToNone 0.3s forwards;*/
+    }
+
+    .burger-line:not(.burger-line_active):nth-child(3) {
+        /*animation: BottomToCenterReverse 0.3s forwards, rotateOutReverse 0.3s forwards 0.3s;*/
+    }
+
+    .welcome {
+        min-height: 600px;
+        background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%), url(../assets/img/welcome-tablet.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .shop {
+        height: 1481px;
+    }
+
+    .arrows {
+        display: flex;
+        position: absolute;
+        top: 508px;
+        width: 100%;
+        left: 0;
+        justify-content: space-between;
+    }
+
+    .drop {
+        right: 105px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .seasons-radios {
+        width: 30rem;
+    }
+
+    .book__cover {
+        right: -30px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #left-arrow {
+        position: relative;
+        left: 50px;
+    }
+
+    #right-arrow {
+        position: relative;
+        right: 50px;
+    }
+}
